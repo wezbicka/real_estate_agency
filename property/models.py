@@ -9,6 +9,7 @@ class Flat(models.Model):
     owners_phonenumber = models.CharField('Номер владельца', max_length=20)
     owner_pure_phone = PhoneNumberField(
         'Нормализированный номер владельца',
+        null=True,
         blank=True,
         max_length=20
     )
